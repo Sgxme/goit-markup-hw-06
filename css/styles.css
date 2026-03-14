@@ -232,13 +232,25 @@ header {}
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .contacts-list-link {
+        text-decoration: none;
+        font-style: normal;
+        color: #434455;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        display: flex;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
 
-.contacts-list-link {
-    text-decoration: none;
-    font-style: normal;
-    color: #434455;
-    display: flex;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media only screen and (min-width: 1158px) {
+    .contacts-list-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
 }
 
 
@@ -275,17 +287,37 @@ header {}
     
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/office.jpg");
+        url("../images/hero-bg-mob@1x.jpg");
     
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/hero-bg-mob@2x.jpg");
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     padding: 112px 0;
+
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/hero-bg-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero {
+          background-image:
+              linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+              url("../images/hero-bg-tablet@2x.jpg");
+      }
   }
 }
 
@@ -293,6 +325,18 @@ header {}
   .hero {
     max-width: 1440px;
     padding: 188px 0;
+
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("../images/hero-bg-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero {
+          background-image:
+              linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+              url("../images/hero-bg-desktop@2x.jpg");
+      }
   }
 }
 
@@ -625,7 +669,7 @@ header {}
 }
 
 .portfolio-item img {
-    width: 100%;
+    width: 288px;
     height: 280px;
     object-fit: cover;
     display: block;
@@ -633,8 +677,15 @@ header {}
 
 @media only screen and (min-width: 768px) {
   .portfolio-item img {
+    width: 356px;
     height: 300px;
   }
+}
+
+@media only screen and (min-width: 1158px) {
+    .portfolio-item img {
+        width: 360px;
+    }
 }
 
 .portfolio-thumb {
