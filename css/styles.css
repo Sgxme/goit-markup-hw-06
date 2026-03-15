@@ -139,7 +139,7 @@ header {}
 
 @media only screen and (min-width: 768px) {
   .nav-con {
-    padding: 16px 16px 0;
+    padding: 0 16px;
   }
 }
 
@@ -535,7 +535,8 @@ header {}
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
-        flex-basis: calc((100% - 24px) / 2)
+        flex-basis: calc((100% - 24px) / 2);
+        gap: 64px 24px;
     }
 }
 
@@ -630,6 +631,12 @@ header {}
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .portfolio-list {
+    gap: 72px 24px;
+  }
 }
 
 .portfolio-list-con {
