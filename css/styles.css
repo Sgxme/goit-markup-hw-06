@@ -363,6 +363,7 @@ header {}
 }
 
 .hero-headline {
+    font-weight: 700;
     max-width: 216px;
     margin-bottom: 72px;
     color: #fff;
@@ -771,8 +772,7 @@ header {}
 @media only screen and (min-width: 1158px) {
   .footer-container {
     gap: 0;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0;
   }
 }
 
