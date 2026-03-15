@@ -460,6 +460,7 @@ header {}
 }
 
 .features-headline {
+    font-weight: 700;
     margin-bottom: 8px;
     font-size: 36px;
     line-height: 1.11;
@@ -763,6 +764,7 @@ header {}
     align-items: baseline;
     flex-wrap: wrap;
     padding-left: 108px;
+    padding-right: 108px;
   }
 }
 
@@ -795,13 +797,15 @@ header {}
 }
 
 .footer-logo {
+    display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #4d5ae5;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .footer-logo-accent {
